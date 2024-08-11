@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #010758, #490d61);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    color: #fff;
+    padding: 0 28px 10px 28px;
+    position: relative; /* Added to position the button correctly */
+}
+
+.main h1 {
+    font-weight: 500;
+    font-size: 45px;
+    margin: -50px 0 55px;
+}
+
+.main h1 span {
+    color: #ff0f0f;
+    margin-bottom: 30px;
+}
+
+textarea {
+    width: calc(100% - 40px);
+    max-width: 40%;
+    min-width: 600px;
+    height: 250px;
+    background: #403d84;
+    color: #fff;
+    border: none;
+    padding: 20px;
+    font-size: 18px;
+    border-radius: 13px;
+    margin-bottom: 30px;
+    resize: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+textarea::placeholder {
+    color: #ddd;
+    font-size: 18px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    width: 600px;
+    gap: 20px;
+    margin-bottom: 20px; /* Add spacing between rows */
+}
+
+button {
+    width: 8em;
+    height: 50px;
+    background: #ff0f0f;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute; /* Positioning it absolutely */
+    top: 80%; /* Distance from the bottom */
+    left: 43%; /* Center horizontally */
+    transition: ease-in-out 0.1s; /* Add a smooth transition */
+}
+
+button:hover {
+    background: #ff0000;
+    color: #fdfdfd;
+    transform: scale(1); /* Slightly enlarge the button */
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.8); /* Add a glow effect */
+}
+
+button img {
+    width: 13px;
+    height: 20px;
+    margin-right: 10px;
+    width: 16px;
+}
+
+select {
+    flex: 1;
+    color: #fff;
+    background: #403d84;
+    height: 50px;
+    padding: 0 20px;
+    outline: 0;
+    border: 0;
+    border-radius: 35px;
+    appearance: none;
+    background-image: url('assets/dropdown.png');
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position-x: calc(100% - 20px);
+    background-position-y: 50%;
+}
+
+/* New CSS for speed control elements */
+.row label {
+    font-size: 20px;
+    font-weight: 500;
+    color: #ffffff;
+    margin-right: 10px;
+}
+
+#rate {
+    width: 80%;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 10px;
+    background: #403d84;
+    border-radius: 5px;
+    outline: none;
+    transition: opacity 0.2s;
+    cursor: pointer;
+    margin-right: 10px; 
+}
+
+#rate::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #ff0f0f;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#rate::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #ff0f0f;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#rateValue {
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    margin-left: 10px;
+    width: 40px;
+    text-align: center;
+}
